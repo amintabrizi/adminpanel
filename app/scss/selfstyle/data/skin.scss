@@ -3,10 +3,11 @@
  * ----------
  */
 .skin-blue .main-header .navbar {
-  background-color: #3c8dbc;
+  background-color: #FFF;
+  border-bottom: 1px solid #e6eaee;
 }
 .skin-blue .main-header .navbar .nav > li > a {
-  color: #ffffff;
+  color: #333c48;
 }
 .skin-blue .main-header .navbar .nav > li > a:hover,
 .skin-blue .main-header .navbar .nav > li > a:active,
@@ -15,21 +16,27 @@
 .skin-blue .main-header .navbar .nav .open > a:hover,
 .skin-blue .main-header .navbar .nav .open > a:focus,
 .skin-blue .main-header .navbar .nav > .active > a {
-  background: rgba(0, 0, 0, 0.1);
-  color: #f6f6f6;
+  background: #FFF;
+  color: red;
 }
-.skin-blue .main-header .navbar .sidebar-toggle {
-  color: #ffffff;
-}
+
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
   color: #f6f6f6;
   background: rgba(0, 0, 0, 0.1);
 }
 .skin-blue .main-header .navbar .sidebar-toggle {
-  color: #fff;
+  color: #dbdce4;
+  border: 1px solid #ced0da;
+  border-radius: 3px;
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#feffff+0,f2f3f7+100 */
+background: #feffff; /* Old browsers */
+background: -moz-linear-gradient(top, #feffff 0%, #f2f3f7 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #feffff 0%,#f2f3f7 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #feffff 0%,#f2f3f7 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#feffff', endColorstr='#f2f3f7',GradientType=0 ); /* IE6-9 */
 }
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
-  background-color: #367fa9;
+  //background-color: #ccc;
 }
 @media (max-width: 767px) {
   .skin-blue .main-header .navbar .dropdown-menu li.divider {
@@ -44,8 +51,12 @@
 }
 .skin-blue .main-header .logo {
   background-color: #367fa9;
-  color: #ffffff;
-  border-bottom: 0 solid transparent;
+  border-bottom: 1px solid #e6eaee;
+}
+@media (min-width: 768px){
+  .skin-blue .main-header .logo {
+    background-color: #FFF;
+  }
 }
 .skin-blue .main-header .logo:hover {
   background-color: #357ca5;
@@ -93,7 +104,7 @@
   border-left-color: #2097ef;
   background: #2097ef;
 }
-.skin-blue .sidebar-menu li.active .treeview-menu .svg-wrapper,.skin-blue .sidebar-menu li.menu-open .treeview-menu .svg-wrapper{
+.skin-blue .sidebar-menu li .treeview-menu .svg-wrapper,.skin-blue .sidebar-menu li.active .treeview-menu .svg-wrapper,.skin-blue .sidebar-menu li.menu-open .treeview-menu .svg-wrapper{
   background: #171e27;
 }
 .skin-blue .sidebar-menu li.active .treeview-menu .svg-wrapper svg,.skin-blue .sidebar-menu li.menu-open .treeview-menu .svg-wrapper svg{
