@@ -4413,7 +4413,7 @@ a:hover, a:active, a:focus {
   transition: margin-right 0.3s ease-in-out;
   margin-bottom: 0;
   margin-right: 230px;
-  margin-left: 300px;
+  margin-left: 270px;
   border: none;
   min-height: 50px;
   border-radius: 0; }
@@ -4443,7 +4443,7 @@ a:hover, a:active, a:focus {
   height: 50px;
   font-size: 16px;
   text-align: center;
-  width: 300px;
+  width: 270px;
   padding: 0 15px;
   font-family: IRANSans;
   overflow: hidden; }
@@ -4740,6 +4740,88 @@ a:hover, a:active, a:focus {
   display: block; }
 
 /*
+ * Component: Table
+ * ----------------
+ */
+
+/* Hide the browser's default checkbox */
+
+.container {
+  display: block;
+  position: relative;
+  cursor: pointer;
+  margin-top: 17px;
+  padding: 15px;
+  -webkit-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+  width: 10px; }
+
+.container input {
+  position: absolute;
+  opacity: 0; }
+
+/* Create a custom checkbox */
+
+.checkmark {
+  position: absolute;
+  top: 0;
+  left: 0;
+  height: 16px;
+  width: 16px;
+  background-color: #f5f7fa;
+  border: 1px solid #ced0da;
+  border-radius: 5px; }
+
+/* When the checkbox is checked, add a blue background */
+
+.container input:checked ~ .checkmark {
+  background-color: #36be20;
+  border: 1px solid #27aa11; }
+
+/* Create the checkmark/indicator (hidden when not checked) */
+
+.checkmark:after {
+  content: "";
+  position: absolute;
+  display: none; }
+
+/* Show the checkmark when checked */
+
+.container input:checked ~ .checkmark:after {
+  display: block; }
+
+/* Style the checkmark/indicator */
+
+.container .checkmark:after {
+  left: 5px;
+  top: 1px;
+  width: 5px;
+  height: 10px;
+  border: solid white;
+  border-width: 0 3px 3px 0;
+  -webkit-transform: rotate(45deg);
+  -ms-transform: rotate(45deg);
+  transform: rotate(45deg); }
+
+.form-group {
+  margin: 0 auto;
+  padding: 0 15px; }
+
+.form-control {
+  font-size: 13px;
+  border: 1px solid #ced0da;
+  background: #f5f6f9;
+  color: #7f8fa4;
+  height: 30px;
+  padding: 3px 8px; }
+
+.circle-svg-wrapper {
+  position: absolute;
+  right: 5px; }
+
+/*
  * Skin: Blue
  * ----------
  */
@@ -5033,7 +5115,7 @@ a:hover, a:active, a:focus {
     margin-right: 0; }
 
   .main-header .navbar {
-    min-height: 120px; }
+    height: 120px; }
 
   .main-header .sidebar-toggle {
     padding: 13px 13px 7px;
@@ -5110,6 +5192,49 @@ a:hover, a:active, a:focus {
 
   .skin-blue-light.sidebar-mini.sidebar-collapse .sidebar-menu > li > .treeview-menu {
     border-left: 1px solid #d2d6de; } }
+
+@media only screen and (min-width: 50em) {
+
+  .table-wrapper {
+    margin: 30px auto;
+    overflow: hidden; }
+
+  .table-wrapper table {
+    border: 1px solid #e6eaee;
+    border-collapse: collapse;
+    text-align: right; }
+
+  .table-striped > tbody > tr:nth-of-type(odd) {
+    background: none; }
+
+  .table-wrapper thead {
+    border-bottom: 1px solid #e7e9ed;
+    background-color: #f5f7fa;
+    filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff, endColorstr=#f5f7fa);
+    background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f7fa));
+    background-image: linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+    background-image: -o-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+    background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f7fa)); }
+
+  .table-wrapper thead span {
+    margin-right: 5px; }
+
+  .table-wrapper thead svg {
+    color: #dbe0e9;
+    fill: #dbe0e9; }
+
+  .table-wrapper th {
+    text-align: right;
+    color: #7f8fa4;
+    font-weight: normal; }
+
+  .table-wrapper tbody tr {
+    border-top: 1px solid #e7e9ed; }
+
+  .table-wrapper tbody tr:hover {
+    border-bottom: 1px solid #00aeef;
+    border-top: 1px solid #00aeef;
+    background: #e8f4fd; } }
 
 @media (max-width: 47.9375em) {
 
@@ -5200,7 +5325,7 @@ a:hover, a:active, a:focus {
 
   .navbar-custom-menu .navbar-nav > li {
     float: left;
-    margin: 5px 0 0 10px; }
+    margin: 0 0 0 10px; }
 
   .navbar-custom-menu .navbar-nav {
     margin: 0;
@@ -5239,5 +5364,53 @@ a:hover, a:active, a:focus {
     right: auto;
     border: 1px solid #ddd;
     background: #fff; } }
+
+@media only screen and (max-width: 50em) {
+
+  /* Force table to not be like tables anymore */
+
+  .table-wrapper table, .table-wrapper thead, .table-wrapper tbody, .table-wrapper th, .table-wrapper td, .table-wrapper tr {
+    display: block; }
+
+  /* Hide table headers (but not display: none;, for accessibility) */
+
+  .table-wrapper thead tr {
+    position: absolute;
+    top: -9999px;
+    left: -9999px; }
+
+  .table-wrapper tr {
+    border: 1px solid #ccc; }
+
+  .table-wrapper td {
+
+    /* Behave  like a "row" */
+    border: none;
+    border-bottom: 1px solid #eee;
+    position: relative;
+    padding-left: 50%;
+    white-space: normal;
+    text-align: left; }
+
+  .table-wrapper td:before {
+
+    /* Now like a table header */
+    position: absolute;
+
+    /* Top/left values mimic padding */
+    top: 6px;
+    left: 6px;
+    width: 45%;
+    padding-right: 10px;
+    white-space: nowrap;
+    text-align: left;
+    font-weight: bold; }
+
+  /*
+	Label the data
+	*/
+
+  .table-wrapper td:before {
+    content: attr(data-title); } }
 
 /*# sourceMappingURL=style.css.map */

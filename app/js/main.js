@@ -1129,3 +1129,6 @@ throw new Error('AdminLTE requires jQuery')
 
 
 //amin tabrizi added code
+$("#checkAll").change(function () {
+    $("input:checkbox").prop('checked', $(this).prop("checked"));
+});

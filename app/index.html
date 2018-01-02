@@ -21,7 +21,7 @@
     <!-- Logo -->
     <h1 class="logo-wrapper">
     <a href="#" class="logo">
-      <span class="logo-mini hidden-sm hidden-lg"><svg width="40" height="40" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#shatel"></use></svg></span>
+      <span class="logo-mini hidden-sm hidden-md hidden-lg"><svg width="40" height="40" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#shatel"></use></svg></span>
 		
 	<span class="logo-lg hidden-xs"><svg width="75" height="75" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#shatel"></use></svg></span>
         <p>سیستم جذب و استخدام</p></span>
@@ -310,23 +310,215 @@
 
   <!-- Content Wrapper. Contains page content -->
   <div class="content-wrapper">
-	<div class="col-md-3">
-          <div class="box box-default box-solid">
-            <div class="box-header with-border">
-              <h3 class="box-title">Expandable</h3>
-
-              <div class="box-tools pull-right">
-                <button type="button" class="btn btn-box-tool" data-widget="collapse"><i class="fa fa-minus"></i>
-                </button>
-              </div>
-              <!-- /.box-tools -->
-            </div>
-            <!-- /.box-header -->
-            <div class="box-body">
-              The body of the box
-            </div>
-            <!-- /.box-body -->
-          </div>
+	<div class="col-xs-12">
+          <div class="table-wrapper col-xs-12">
+            <table class="col-xs-12 table-striped table-condensed cf">
+        		<thead class="cf">
+        			<tr>
+        				<th> 
+                        <label class="container">
+                          <input type="checkbox" id="checkAll">
+                          <span class="checkmark"></span>
+                        </label>
+                        </th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>نام کامل</span></th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>نام پدر</span></th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>شماره شناسنامه</span></th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>کد ملی</span></th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>شهر</span></th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>سمت درخواستی</span></th>
+        				<th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>وضعیت</span></th>
+        				<th>
+                            <div class="form-group">
+                              <select class="form-control" id="sel1">
+                              <option>عملیات</option>
+                                <option>پاک کردن</option>
+                                <option>ویرایش کردن</option>
+                              </select>
+                            </div>
+                        </th>
+        			</tr>
+        		</thead>
+        		<tbody>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">امین تبریزی</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">تهران</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">امیرعباس عبدالعلی</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">اصفهان</td>
+        				<td data-title="سمت درخواستی">کارشناس کارگزینی</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></div></use></svg>نامشخص</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">مهدی صفارزاده خمکی</td>
+        				<td data-title="نام پدر">محمد مهدی زاده</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">شیراز</td>
+        				<td data-title="سمت درخواستی">کارشناس سستادی فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">شهرام ندری</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">قزوین</td>
+        				<td data-title="سمت درخواستی">کارشناس حسابداری مالی</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">محمد رضا اسکندری</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">اهواز</td>
+        				<td data-title="سمت درخواستی">مسئول دفتر فنی</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">سعید مولایی</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">عباس آباد</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">فرهاد آبنیکی</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">بندر امام خمینی</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></div></use></svg>نامشخص</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">غلامعلی قیامجو</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">زاهدان</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">حمید دادادش زاده</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">کرمانشاه</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">غلامعلی میرزاده</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">تهران</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        			<tr>
+        				<td data-title="انتخاب">
+                        <label class="container">
+                          <input type="checkbox">
+                          <span class="checkmark"></span>
+                        </label>
+						</td>
+        				<td data-title="نام کامل">سعید حمزه زاده</td>
+        				<td data-title="نام پدر">محمد</td>
+        				<td data-title="شماره شناسنامه">29070</td>
+        				<td data-title="کد ملی">0063526255</td>
+        				<td data-title="شهر">تهران</td>
+        				<td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
+        				<td data-title="وضعیت"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+        				<td data-title="عملیات">برای انجام عملیات کلیک کنید تا اجرا گردد</td>
+        			</tr>
+        		</tbody>
+        	</table>
+        </div>
           <!-- /.box -->
         </div>
   </div>
