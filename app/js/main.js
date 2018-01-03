@@ -1132,3 +1132,9 @@ throw new Error('AdminLTE requires jQuery')
 $("#checkAll").change(function () {
     $("input:checkbox").prop('checked', $(this).prop("checked"));
 });
+
+
+
+$(document).ready(function(){
+    $('[data-toggle="tooltip"]').tooltip(); 
+});
