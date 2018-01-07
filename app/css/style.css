@@ -4306,6 +4306,10 @@ button.close {
   margin-left: 0 !important;
   font-size: 100%; }
 
+h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
+  font-family: IRANSans !important;
+  text-align: right !important; }
+
 /*!
  *   AdminLTE v2.4.0
  *   Author: Almsaeed Studio
@@ -4965,6 +4969,13 @@ a:hover, a:active, a:focus {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8738', endColorstr='#ff400b',GradientType=0 );
   /* IE6-9 */ }
 
+.modal {
+  font-family: IRANSans; }
+
+.modal h4 {
+  font-size: 17px;
+  line-height: 1.7; }
+
 .modal-header {
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2da1f8+0,2499f2+44,1991eb+100 */
   background: #2da1f8;
@@ -4978,19 +4989,35 @@ a:hover, a:active, a:focus {
   filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da1f8', endColorstr='#1991eb',GradientType=0 );
   /* IE6-9 */
   border-top-left-radius: 6px;
-  border-top-right-radius: 6px; }
+  border-top-right-radius: 6px;
+  color: #FFF; }
+
+.modal-header .close {
+  float: left;
+  margin-top: 5px;
+  opacity: 0.8;
+  color: white; }
+
+.modal-header .close:hover {
+  opacity: 1; }
 
 .modal-content {
-  background: transparent;
+  border-radius: 0;
   border: none;
   -webkit-box-shadow: none;
           box-shadow: none; }
 
-.modal-content .container {
-  background: #FFF; }
+.modal-footer {
+  border-bottom-left-radius: 6px;
+  border-bottom-right-radius: 6px;
+  background: #FFF;
+  border-top: none; }
 
-.modal-body {
-  background: #FFF; }
+.small-modal .modal-dialog {
+  width: 480px; }
+
+.text-wrapper {
+  margin-bottom: 40px; }
 
 /*
  * Skin: Blue
