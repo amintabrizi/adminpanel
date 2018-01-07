@@ -54,3 +54,8 @@
 .tooltip.top .tooltip-arrow{
   border-top-color: #424242;
 }
+.sidebar-menu > li .label, .sidebar-menu > li .badge{
+  margin-right: 5px;
+  margin-left: 0!important;
+  font-size: 100%;
+}

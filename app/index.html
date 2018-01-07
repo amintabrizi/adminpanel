@@ -157,28 +157,16 @@
             </li>
           </ul>
         </li>
-        <li class="treeview">
+        <li>
           <a href="#">
           	<div class="svg-wrapper">
           	<svg width="20" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#doc-tick"></use></svg>
             </div>
             <span class="menu-title">تایید مدیرعامل</span>
-            <div class="pull-right-container">
-              <svg width="8" height="8" role="img" class="plus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#plus"></use></svg>
-              <svg width="8" height="8" role="img" class="minus"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#minus"></use></svg>
-            </div>
+            <span class="lable-container">
+              <span class="label label-orange pull-left">۴</span>
+            </span>
           </a>
-          <ul class="treeview-menu">
-            <li>
-            <a href="#"><div class="svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle"></use></svg></div><span class="menu-title">نوشته اول</span></a>
-            </li>
-            <li>
-            <a href="#"><div class="svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle"></use></svg></div><span class="menu-title">نوشته اول</span></a>
-            </li>
-            <li>
-            <a href="#"><div class="svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle"></use></svg></div><span class="menu-title">نوشته اول</span></a>
-            </li>
-          </ul>
         </li>
         <li class="active treeview">
           <a href="#">
@@ -295,7 +283,7 @@
             </li>
           </ul>
         </li>
-        <li class="treeview">
+        <li>
           <a href="#" class="expand" data-toggle="collapse">
           	<div class="svg-wrapper">
           	<svg width="20" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#mail"></use></svg>
@@ -335,7 +323,6 @@
                         <option>پاک کردن</option>
                         <option>ویرایش کردن</option>  
                       </select>
-                      
                     </div>
                 </th>
             </tr>
@@ -356,7 +343,9 @@
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
                 <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
                 <td data-title="عملیات" class="actions">
+                    <span data-toggle="modal" data-target="#myModal">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    </span>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
                     <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
@@ -597,14 +586,24 @@
         </tbody>
         </table>
         	<div class="box-footer">
-            	<div class="pagination-wrapper  pull-left">
+            	<div class="pagination-wrapper pull-left">
                   <ul class="pagination pagination-sm">
-                    <li><a href="#">«</a></li>
+                    <li><a href="#"><svg width="9" height="9" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#left-arrow"></use></svg></a></li>
                     <li class="active"><a href="#">۱</a></li>
                     <li><a href="#">۲</a></li>
                     <li><a href="#">۳</a></li>
-                    <li><a href="#">»</a></li>
+                    <li><a href="#">۴</a></li>
+                    <li><a href="#">۵</a></li>
+                    <li class="disabled"><a href="#"><svg width="9" height="9" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#right-arrow"></use></svg></a></li>
                   </ul>
+                </div>
+                <div class="pull-right select-count">
+                <select class="form-control">
+                    <option>۱۰ مورد در هر صفحه</option>
+                    <option>۲۰ مورد در هر صفحه</option>
+                    <option>۵۰ مورد در هر صفحه</option>  
+                </select>
+                <span>۳۰-۴۰ از ۱۰۰ مورد</span>
                 </div>
             </div>
         </div>
@@ -612,9 +611,47 @@
     </div>
   </div>
   <!-- /.content-wrapper -->
-
 </div>
-    
+<div class="modal" id="myModal">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Modal title</h4>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          Content for the dialog / modal goes here.
+          <br>
+          <br>
+          <br>
+          <br>
+          <br>
+          <a data-toggle="modal" href="#myModal2" class="btn btn-primary">Launch modal</a>
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div>
+    </div>
+</div>
+<div class="modal" id="myModal2" data-backdrop="static">
+	<div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+          <h4 class="modal-title">Second Modal title</h4>
+        </div><div class="container"></div>
+        <div class="modal-body">
+          Content for the dialog / modal goes here.
+        </div>
+        <div class="modal-footer">
+          <a href="#" data-dismiss="modal" class="btn">Close</a>
+          <a href="#" class="btn btn-primary">Save changes</a>
+        </div>
+      </div>
+    </div>
+</div>
     <!-- /Start your project here-->
     <!--build:js js/main.min.js -->
     <!-- SCRIPTS -->

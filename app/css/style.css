@@ -4301,6 +4301,11 @@ button.close {
 .tooltip.top .tooltip-arrow {
   border-top-color: #424242; }
 
+.sidebar-menu > li .label, .sidebar-menu > li .badge {
+  margin-right: 5px;
+  margin-left: 0 !important;
+  font-size: 100%; }
+
 /*!
  *   AdminLTE v2.4.0
  *   Author: Almsaeed Studio
@@ -4431,7 +4436,7 @@ a:hover, a:active, a:focus {
   transition: margin-right 0.3s ease-in-out;
   margin-bottom: 0;
   margin-right: 230px;
-  margin-left: 270px;
+  margin-left: 300px;
   border: none;
   min-height: 50px;
   border-radius: 0; }
@@ -4461,8 +4466,8 @@ a:hover, a:active, a:focus {
   height: 50px;
   font-size: 16px;
   text-align: center;
-  width: 270px;
-  padding: 0 15px;
+  width: 300px;
+  padding: 0 30px;
   font-family: IRANSans;
   overflow: hidden; }
 
@@ -4904,12 +4909,88 @@ a:hover, a:active, a:focus {
   background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f7fa)); }
 
 .pagination li a:hover {
-  border-color: #ced0da; }
+  border-color: #ced0da;
+  background-color: #eceeef; }
 
 .pagination .active a, .pagination .active a:hover {
   background: #d2e5f5;
   border: 1px solid #00aeef;
   color: #333c48; }
+
+.pagination li svg {
+  color: #333c48;
+  fill: #333c48; }
+
+.pagination li.disabled svg {
+  fill: #bfc6d8;
+  color: #bfc6d8; }
+
+.select-count {
+  display: inline-block;
+  margin: 20px 0; }
+
+.select-count select {
+  width: 150px;
+  float: right; }
+
+.select-count span {
+  width: 100px;
+  float: right;
+  margin: 8px 10px 8px 0; }
+
+.lable-container {
+  top: 11px;
+  left: 10px;
+  position: absolute; }
+
+.sidebar-collapse .lable-container {
+  position: absolute;
+  width: auto !important;
+  right: auto !important;
+  left: -170px;
+  top: 10px !important;
+  margin-left: 0 !important;
+  padding: 0 !important; }
+
+.label-orange {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#ff8738+0,ff702b+33,ff400b+100 */
+  background: #ff8738;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#ff8738), color-stop(33%, #ff702b), to(#ff400b));
+  background: -o-linear-gradient(top, #ff8738 0%, #ff702b 33%, #ff400b 100%);
+  background: linear-gradient(to bottom, #ff8738 0%, #ff702b 33%, #ff400b 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8738', endColorstr='#ff400b',GradientType=0 );
+  /* IE6-9 */ }
+
+.modal-header {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2da1f8+0,2499f2+44,1991eb+100 */
+  background: #2da1f8;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#2da1f8), color-stop(44%, #2499f2), to(#1991eb));
+  background: -o-linear-gradient(top, #2da1f8 0%, #2499f2 44%, #1991eb 100%);
+  background: linear-gradient(to bottom, #2da1f8 0%, #2499f2 44%, #1991eb 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da1f8', endColorstr='#1991eb',GradientType=0 );
+  /* IE6-9 */
+  border-top-left-radius: 6px;
+  border-top-right-radius: 6px; }
+
+.modal-content {
+  background: transparent;
+  border: none;
+  -webkit-box-shadow: none;
+          box-shadow: none; }
+
+.modal-content .container {
+  background: #FFF; }
+
+.modal-body {
+  background: #FFF; }
 
 /*
  * Skin: Blue
@@ -5456,7 +5537,10 @@ a:hover, a:active, a:focus {
     border: 1px solid #ddd;
     background: #fff; } }
 
-@media only screen and (max-width: 50em) {
+@media only screen and (max-width: 56.25em) {
+
+  .table-wrapper table {
+    padding: 0; }
 
   /* Force table to not be like tables anymore */
 
@@ -5471,7 +5555,9 @@ a:hover, a:active, a:focus {
     left: -9999px; }
 
   .table-wrapper tr {
-    border: 1px solid #ccc; }
+    border: 1px solid #ccc;
+    margin-top: 20px;
+    overflow: hidden; }
 
   .table-wrapper td {
 
@@ -5481,7 +5567,8 @@ a:hover, a:active, a:focus {
     position: relative;
     padding-left: 50%;
     white-space: normal;
-    text-align: left; }
+    text-align: left;
+    overflow: hidden; }
 
   .table-wrapper td:before {
 
@@ -5490,11 +5577,11 @@ a:hover, a:active, a:focus {
 
     /* Top/left values mimic padding */
     top: 6px;
-    left: 6px;
+    right: 6px;
     width: 45%;
     padding-right: 10px;
     white-space: nowrap;
-    text-align: left;
+    text-align: right;
     font-weight: bold; }
 
   /*

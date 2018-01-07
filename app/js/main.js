@@ -1138,3 +1138,10 @@ $("#checkAll").change(function () {
 $(document).ready(function(){
     $('[data-toggle="tooltip"]').tooltip(); 
 });
+
+
+//modal page
+
+$('#openBtn').click(function(){
+	$('#myModal').modal({show:true})
+});
