@@ -946,7 +946,7 @@ a:focus {
   margin-top: 5px;
 }
 
-.btn-delete{
+.btn-delete,.btn-reject{
   background: #ff484f;
 }
 .btn-archives{
@@ -958,7 +958,7 @@ a:focus {
 .btn-edit{
   background: #00aeef;
 }
-.btn-transfer{
+.btn-transfer,.btn-accept{
   background: #3ec529;
 }
 .btn-view{
@@ -1051,8 +1051,11 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8738', end
   font-family: IRANSans;
 }
 .modal h4{
-  font-size: 17px;
+  font-size: 16px;
   line-height: 1.7;
+}
+.modal label{
+  color: #93a0b1;
 }
 .modal-header{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#2da1f8+0,2499f2+44,1991eb+100 */
@@ -1089,6 +1092,6 @@ color: #FFF;
 .small-modal .modal-dialog{
   width: 480px;
 }
-.text-wrapper{
-  margin-bottom: 40px;
+.input-wrapper{
+  margin-bottom: 30px;
 }

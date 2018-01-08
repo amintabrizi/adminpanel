@@ -368,11 +368,9 @@
                 <td data-title="سمت درخواستی">کارشناس کارگزینی</td>
                 <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></use></svg></div></use></svg>نامشخص</td>
                 <td data-title="عملیات" class="actions">
-                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="انتقال به واحد" class="btn btn-transfer"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#transfer"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="رد" class="btn btn-reject"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#reject-small"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="قبول" class="btn btn-accept"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#accept-small"></use></svg></div></a>
                     <a data-toggle="tooltip" title="نمایش" class="btn btn-view"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#view"></use></svg></div></a>
                 </td>
             </tr>
@@ -620,96 +618,29 @@
       </div>
     <div class="modal-content">
       <div class="modal-body">
-      	<div class="text-wrapper">
+      	<div class="input-wrapper">
             <label>نتیجه مصاحبه</label>
             <select class="form-control">
             <option>مثبت</option>
             <option>منفی</option>
             </select>
         </div>
-        <div class="text-wrapper">  
+        <div class="input-wrapper">
             <label>مصاحبه کننده</label>
             <input type="text" class="form-control" id="user">
         </div>
-        <div class="text-wrapper">
+        <div class="input-wrapper no-margin">
         	<label>شرح</label>
             <textarea class="form-control" rows="5" id="comment"></textarea>
         </div>
       </div>    
     </div>
-    <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-
-      </div>
-  </div>
-</div>
-<div class="modal fade rotate" id="myModal2">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Modal 2</h4>
-
-      </div>
-      <div class="container"></div>
-      <div class="modal-body">Content for the dialog / modal goes here.
-        <br>
-        <br>
-        <p>come content</p>
-        <br>
-        <br>
-        <br> <a data-toggle="modal" href="#myModal3" class="btn btn-primary">Launch modal</a>
-
-      </div>
-      <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-
-      </div>
+    <div class="modal-footer">
+    	<a href="#" class="btn btn-primary">ثبت</a>
+        <a href="#" data-dismiss="modal" class="btn btn-default">انصراف</a>
     </div>
   </div>
 </div>
-<div class="modal fade" id="myModal3">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Modal 3</h4>
-
-      </div>
-      <div class="container"></div>
-      <div class="modal-body">Content for the dialog / modal goes here.
-        <br>
-        <br>
-        <br>
-        <br>
-        <br> <a data-toggle="modal" href="#myModal4" class="btn btn-primary">Launch modal</a>
-
-      </div>
-      <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-
-      </div>
-    </div>
-  </div>
-</div>
-<div class="modal fade" id="myModal4">
-  <div class="modal-dialog">
-    <div class="modal-content">
-      <div class="modal-header">
-        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
-        <h4 class="modal-title">Modal 4</h4>
-
-      </div>
-      <div class="container"></div>
-      <div class="modal-body">Content for the dialog / modal goes here.</div>
-      <div class="modal-footer"> <a href="#" data-dismiss="modal" class="btn">Close</a>
-        <a href="#" class="btn btn-primary">Save changes</a>
-
-      </div>
-    </div>
-  </div>
-</div>
-
     <!-- /Start your project here-->
     <!--build:js js/main.min.js -->
     <!-- SCRIPTS -->
