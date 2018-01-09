@@ -747,7 +747,15 @@ a:focus {
     margin: 30px auto;
     overflow: hidden;
   }
-
+  .modal .table-wrapper{
+    margin: 0 auto;
+  }
+  .modal-body{
+    padding: 30px
+  }
+  .scroll-wrapper{
+    padding-left: 15px;
+  }
   .table-wrapper table{
     border: 1px solid #e6eaee;
     border-collapse: collapse;
@@ -924,10 +932,7 @@ a:focus {
   height: 30px;
   padding: 3px 8px;
 }
-.user-status,.city{
-  position: relative;
-  padding-right: 15px!important;
-}
+
 .circle-svg-wrapper{
   position: absolute;
   right: 5px;
@@ -963,6 +968,17 @@ a:focus {
 }
 .btn-view{
   background: #81736a;
+}
+.box-header{
+  margin-bottom: 30px;
+}
+.btn-icon{
+  padding: 10px 40px 10px 20px;
+}
+.btn-svg-wrapper{
+  position: absolute;
+  right: 20px;
+  top:12px;
 }
 .box-footer{
   /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f5f7fa+0,fbfcfe+66,feffff+100 */
@@ -1050,6 +1066,9 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ff8738', end
 .modal{
   font-family: IRANSans;
 }
+.modal-open{
+  padding-left: 0!important;
+}
 .modal h4{
   font-size: 16px;
   line-height: 1.7;
@@ -1067,6 +1086,7 @@ filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#2da1f8', end
 border-top-left-radius: 6px;
 border-top-right-radius: 6px;
 color: #FFF;
+padding: 16px 30px;
 }
 .modal-header .close{
   float: left;
@@ -1088,10 +1108,72 @@ color: #FFF;
   border-bottom-right-radius: 6px;
   background: #FFF;
   border-top: none;
+  padding:0 30px 30px;
 }
 .small-modal .modal-dialog{
   width: 480px;
 }
+.large-modal .modal-dialog{
+  width: 960px;
+}
+.large-modal .modal-dialog{
+  width: 80%;
+}
+
 .input-wrapper{
   margin-bottom: 30px;
 }
+.slimScrollDiv{
+  padding-left: 15px;
+}
+
+
+//history views modal
+.history-view th{
+  padding-top: 22px!important;
+  padding-bottom: 22px!important;
+}
+.history-view td{
+  padding-top: 22px!important;
+  padding-bottom: 22px!important;
+}
+.smallbox{
+  border: 1px solid #e6eaee;
+  border-radius: 5px;
+  overflow: hidden;
+  margin-bottom: 30px;
+}
+.smallbox-header{
+  padding: 22px 30px;
+  border-bottom: 1px solid #e7e9ed;
+  background-color:#f5f7fa;
+filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff, endColorstr=#f5f7fa);
+background-image:-moz-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-webkit-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-ms-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-o-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7fa));
+}
+.smallbox-content{
+  padding:0 ;
+  overflow: hidden;
+}
+.smallbox-content .row-content{
+  border-bottom: 1px solid #e7e9ed;
+  overflow: hidden;
+  padding: 22px 30px;
+}
+.smallbox-content .row-content:last-child{
+  border-bottom: none;
+}
+.smallbox-svg-wrapper{
+  position: absolute;
+  right: 0;
+  top:0px;
+}
+
+
+
+
+//toast

@@ -1151,7 +1151,7 @@ $(document).ready(function() {
   });
 
   $(document).on('show.bs.modal', '.modal', function(event) {
-    var zIndex = 1040 + (10 * $('.modal:visible').length);
+    var zIndex = 9999 + (10 * $('.modal:visible').length);
     $(this).css('z-index', zIndex);
     setTimeout(function() {
       $('.modal-backdrop').not('.modal-stack').css('z-index', zIndex - 1).addClass('modal-stack');
@@ -1160,5 +1160,16 @@ $(document).ready(function() {
 
 
 });
-//date picker
- $('.input-group.date').datepicker({format: "dd.mm.yyyy"}); 
+//slim scroll
+
+  $('.scroll').slimscroll({
+    alwaysVisible: false,
+    height: 400,
+	position: 'left',
+	railVisible: true,
+  });
+ 
+ //toast
+
+ 
+ 
