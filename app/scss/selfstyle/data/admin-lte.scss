@@ -1143,6 +1143,9 @@ padding: 16px 30px;
   overflow: hidden;
   margin-bottom: 30px;
 }
+.smallbox:last-child{
+  margin-bottom: 0;
+}
 .smallbox-header{
   padding: 22px 30px;
   border-bottom: 1px solid #e7e9ed;
@@ -1177,3 +1180,51 @@ background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%
 
 
 //toast
+.jq-toast-wrap { display: block; position: fixed; width: 250px;  pointer-events: none !important; margin: 0; padding: 0; letter-spacing: normal; z-index: 9000 !important; }
+.jq-toast-wrap * { margin: 0; padding: 0; }
+
+.jq-toast-wrap.bottom-left { bottom: 20px; left: 20px; }
+.close-jq-toast-single { position: absolute;
+    top: 10px;
+    left: 15px;
+    font-size: 20px;
+    cursor: pointer; opacity: 0.4;}
+.close-jq-toast-single:hover{
+  opacity: 1;
+}
+.jq-toast-single { opacity: 0.95;display: block; width: 100%; padding: 10px; margin: 0px 0px 5px; border-radius: 5px; font-size: 12px; font-family: IRANSans; line-height: 17px; position: relative;  pointer-events: all !important; background-color: #444444; color: white; }
+.jq-has-icon { padding: 20px 50px 20px 0; background-repeat: no-repeat; background-position: 10px; }
+.jq-icon-info::after {
+  content: url(../svg/inbox-toast.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right:20px;
+  top:17px;
+
+
+ }
+.jq-icon-warning::after {
+  content: url(../svg/warning-toast.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right:20px;
+  top:17px;
+ }
+.jq-icon-error::after {
+  content: url(../svg/reject.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right:20px;
+  top:17px;
+ }
+.jq-icon-success::after {
+  content: url(../svg/accept-toast.svg);
+  width: 20px;
+  height: 20px;
+  position: absolute;
+  right:20px;
+  top:17px;
+ }

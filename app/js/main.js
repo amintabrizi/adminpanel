@@ -1169,7 +1169,21 @@ $(document).ready(function() {
 	railVisible: true,
   });
  
- //toast
+//toast
+$(document).ready(function() {
+            
+            $('.eval-js').on('click', function ( e ) {
+                e.preventDefault();
 
+                if ( !$(this).hasClass('generate-toast') ) {
+                    var code = $(this).siblings('pre').find('code').text();
+                    code.replace("<span class='hidden'>", '');
+                    code.replace("</span");
+
+                    eval( code );
+                };
+            });
+
+        });
  
  
