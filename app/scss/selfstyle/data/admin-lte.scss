@@ -1114,9 +1114,9 @@ padding: 16px 30px;
   width: 480px;
 }
 .large-modal .modal-dialog{
-  width: 960px;
+  width: 1020px;
 }
-.large-modal .modal-dialog{
+.extra-large-modal .modal-dialog{
   width: 80%;
 }
 
@@ -1228,3 +1228,98 @@ background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%
   right:20px;
   top:17px;
  }
+//tabs
+.nav-tabs{
+  border-bottom: 1px solid #e6eaee;
+  margin-top: 10px;
+}
+.nav-tabs > li > a{
+  border: 1px solid #e6eaee;
+  background-color:#f5f7fa;
+filter:progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff, endColorstr=#f5f7fa);
+background-image:-moz-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-webkit-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-ms-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-o-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+background-image:-webkit-gradient(linear, right top, right bottom, color-stop(0%,#ffffff), color-stop(100%,#f5f7fa));
+color: #7f8fa4;
+margin-right: 10px;
+
+padding: 0;
+}
+.nav-tabs > li:first-child > a{
+  margin-right: 0;
+}
+.nav-tabs > li.active{
+  margin-top: -10px;
+}
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus{
+  background-image: none;
+  border-color: 1px solid #e6eaee;
+  color: #279cf4;
+  margin-top: 1px;
+}
+.nav-tabs > li > a > span{
+  display: block;
+  padding: 10px 23.28px 10px 24px;
+  border-top: 3px solid transparent;
+  border-radius: 3px;
+
+}
+.nav-tabs > li.active > a > span{
+  border-top: 3px solid #279cf4;
+  padding: 15px;
+  margin-top: -1px;
+}
+.tab-content{
+  clear: both;
+    border: 1px solid #e6eaee;
+    border-top: none;
+    width: 100%;
+
+}
+.resume-box{
+  border-bottom: 1px solid #e6eaee;
+  overflow: hidden;
+  box-sizing: border-box;
+  padding: 30px;
+  position: relative;
+}
+.resume-box:last-child{
+  border-bottom: none;
+}
+.resume-box h5{
+  color: #ff911b;
+  border-bottom: 1px solid #ff911b;
+  padding-bottom: 15px;
+  margin-bottom: 15px;
+}
+.user-body{
+  clear: both;
+  margin-top: 30px;
+}
+.user-pic img{
+  border-radius: 50%;
+  width: 100px;
+  height: 100px;
+}
+.info-row{
+  padding:15px;
+}
+.view-more{
+  position: absolute;
+  left:30px;
+  bottom: 0;
+  background: #ff911a;
+  padding: 10px 12px 5px;
+  border-radius: 10px 10px 0 0;
+}
+.view-more svg{
+  fill:#FFF;
+  color:#FFF;
+}
+.resume-box .collapse{
+  clear: both;
+  overflow: hidden;
+}

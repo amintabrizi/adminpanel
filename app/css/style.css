@@ -4270,6 +4270,12 @@ button.close {
 .margin-r-20 {
   padding-right: 20px !important; }
 
+.padding-r-0 {
+  padding-right: 0 !important; }
+
+.padding-l-0 {
+  padding-left: 0 !important; }
+
 .relative {
   position: relative; }
 
@@ -4331,6 +4337,15 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12 {
   float: right; }
+
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12 {
+  float: right; }
+
+.nav-tabs > li {
+  float: right; }
+
+.gray-color {
+  color: #7f8fa4; }
 
 /*!
  *   AdminLTE v2.4.0
@@ -5054,9 +5069,9 @@ a:hover, a:active, a:focus {
   width: 480px; }
 
 .large-modal .modal-dialog {
-  width: 960px; }
+  width: 1020px; }
 
-.large-modal .modal-dialog {
+.extra-large-modal .modal-dialog {
   width: 80%; }
 
 .input-wrapper {
@@ -5189,6 +5204,96 @@ a:hover, a:active, a:focus {
   position: absolute;
   right: 20px;
   top: 17px; }
+
+.nav-tabs {
+  border-bottom: 1px solid #e6eaee;
+  margin-top: 10px; }
+
+.nav-tabs > li > a {
+  border: 1px solid #e6eaee;
+  background-color: #f5f7fa;
+  filter: progid:DXImageTransform.Microsoft.gradient(GradientType=0,startColorstr=#ffffff, endColorstr=#f5f7fa);
+  background-image: -webkit-gradient(linear, left top, left bottom, from(#ffffff), to(#f5f7fa));
+  background-image: linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+  background-image: -o-linear-gradient(top, #ffffff 0%, #f5f7fa 100%);
+  background-image: -webkit-gradient(linear, right top, right bottom, color-stop(0%, #ffffff), color-stop(100%, #f5f7fa));
+  color: #7f8fa4;
+  margin-right: 10px;
+  padding: 0; }
+
+.nav-tabs > li:first-child > a {
+  margin-right: 0; }
+
+.nav-tabs > li.active {
+  margin-top: -10px; }
+
+.nav-tabs > li.active > a, .nav-tabs > li.active > a:hover, .nav-tabs > li.active > a:focus {
+  background-image: none;
+  border-color: 1px solid #e6eaee;
+  color: #279cf4;
+  margin-top: 1px; }
+
+.nav-tabs > li > a > span {
+  display: block;
+  padding: 10px 23.28px 10px 24px;
+  border-top: 3px solid transparent;
+  border-radius: 3px; }
+
+.nav-tabs > li.active > a > span {
+  border-top: 3px solid #279cf4;
+  padding: 15px;
+  margin-top: -1px; }
+
+.tab-content {
+  clear: both;
+  border: 1px solid #e6eaee;
+  border-top: none;
+  width: 100%; }
+
+.resume-box {
+  border-bottom: 1px solid #e6eaee;
+  overflow: hidden;
+  -webkit-box-sizing: border-box;
+          box-sizing: border-box;
+  padding: 30px;
+  position: relative; }
+
+.resume-box:last-child {
+  border-bottom: none; }
+
+.resume-box h5 {
+  color: #ff911b;
+  border-bottom: 1px solid #ff911b;
+  padding-bottom: 15px;
+  margin-bottom: 15px; }
+
+.user-body {
+  clear: both;
+  margin-top: 30px; }
+
+.user-pic img {
+  border-radius: 50%;
+  width: 100px;
+  height: 100px; }
+
+.info-row {
+  padding: 15px; }
+
+.view-more {
+  position: absolute;
+  left: 30px;
+  bottom: 0;
+  background: #ff911a;
+  padding: 10px 12px 5px;
+  border-radius: 10px 10px 0 0; }
+
+.view-more svg {
+  fill: #FFF;
+  color: #FFF; }
+
+.resume-box .collapse {
+  clear: both;
+  overflow: hidden; }
 
 /*
  * Skin: Blue

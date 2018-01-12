@@ -23,6 +23,12 @@
 .margin-r-20{
   padding-right: 20px!important;
 }
+.padding-r-0{
+  padding-right: 0!important;
+}
+.padding-l-0{
+  padding-left: 0!important;
+}
 .relative{
   position: relative;
 }
@@ -84,4 +90,13 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 }
 .col-xs-1, .col-xs-2, .col-xs-3, .col-xs-4, .col-xs-5, .col-xs-6, .col-xs-7, .col-xs-8, .col-xs-9, .col-xs-10, .col-xs-11, .col-xs-12{
   float: right;
+}
+.col-sm-1, .col-sm-2, .col-sm-3, .col-sm-4, .col-sm-5, .col-sm-6, .col-sm-7, .col-sm-8, .col-sm-9, .col-sm-10, .col-sm-11, .col-sm-12{
+  float: right;
+}
+.nav-tabs > li{
+  float: right;
+}
+.gray-color{
+  color: #7f8fa4;
 }

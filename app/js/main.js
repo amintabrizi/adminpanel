@@ -1164,7 +1164,7 @@ $(document).ready(function() {
 
   $('.scroll').slimscroll({
     alwaysVisible: false,
-    height: 400,
+    height: 450,
 	position: 'left',
 	railVisible: true,
   });
@@ -1186,4 +1186,15 @@ $(document).ready(function() {
 
         });
  
- 
+ //responsive tabs
+ (function($) {
+      fakewaffle.responsiveTabs(['xs', 'sm' , 'md']);
+  })(jQuery);
+  
+  
+  //toggle
+jQuery(document).ready(function(){
+    jQuery('#hideshow').live('click', function(event) {        
+         jQuery('#content').toggle('show');
+    });
+});
