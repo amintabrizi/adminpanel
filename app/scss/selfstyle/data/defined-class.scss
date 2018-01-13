@@ -100,3 +100,40 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6{
 .gray-color{
   color: #7f8fa4;
 }
+.btn-success{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3ec428+0,33bc1d+41,25b10f+100 */
+  background: #3ec428; /* Old browsers */
+  background: -moz-linear-gradient(top, #3ec428 0%, #33bc1d 41%, #25b10f 100%); /* FF3.6-15 */
+  background: -webkit-linear-gradient(top, #3ec428 0%,#33bc1d 41%,#25b10f 100%); /* Chrome10-25,Safari5.1-6 */
+  background: linear-gradient(to bottom, #3ec428 0%,#33bc1d 41%,#25b10f 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ec428', endColorstr='#25b10f',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #249533;
+}
+.btn-danger{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85c62+0,ef5056+42,e64349+100 */
+background: #f85c62; /* Old browsers */
+background: -moz-linear-gradient(top, #f85c62 0%, #ef5056 42%, #e64349 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #f85c62 0%,#ef5056 42%,#e64349 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #f85c62 0%,#ef5056 42%,#e64349 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85c62', endColorstr='#e64349',GradientType=0 ); /* IE6-9 */
+  border: 1px solid #b7464a;
+}
+.btn-info{
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aeef+1,00abea+42,00a3e0+100 */
+background: #00aeef; /* Old browsers */
+background: -moz-linear-gradient(top, #00aeef 1%, #00abea 42%, #00a3e0 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top, #00aeef 1%,#00abea 42%,#00a3e0 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom, #00aeef 1%,#00abea 42%,#00a3e0 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#00a3e0',GradientType=0 ); /* IE6-9 */
+border: 1px solid #0083b4;
+}
+.btn-default{
+  border: 1px solid #959595;
+}
+.form-control{
+  font-size: 13px;
+  background: #FFF;
+  color: #7f8fa4;
+  height: 30px;
+  padding: 3px 8px;
+}

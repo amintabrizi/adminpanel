@@ -1532,31 +1532,31 @@ a.btn.disabled, fieldset[disabled] a.btn {
     background-color: #fff; }
 .btn-success {
   color: #fff;
-  background-color: #5cb85c;
-  border-color: #4cae4c; }
+  background-color: #3dc528;
+  border-color: #36b024; }
 .btn-success:focus, .btn-success.focus {
     color: #fff;
-    background-color: #449d44;
-    border-color: #255625; }
+    background-color: #309b1f;
+    border-color: #16460e; }
 .btn-success:hover {
     color: #fff;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #309b1f;
+    border-color: #277d19; }
 .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     color: #fff;
-    background-color: #449d44;
-    border-color: #398439; }
+    background-color: #309b1f;
+    border-color: #277d19; }
 .btn-success:active:hover, .btn-success:active:focus, .btn-success:active.focus, .btn-success.active:hover, .btn-success.active:focus, .btn-success.active.focus, .open > .btn-success.dropdown-toggle:hover, .open > .btn-success.dropdown-toggle:focus, .open > .btn-success.dropdown-toggle.focus {
       color: #fff;
-      background-color: #398439;
-      border-color: #255625; }
+      background-color: #277d19;
+      border-color: #16460e; }
 .btn-success:active, .btn-success.active, .open > .btn-success.dropdown-toggle {
     background-image: none; }
 .btn-success.disabled:hover, .btn-success.disabled:focus, .btn-success.disabled.focus, .btn-success[disabled]:hover, .btn-success[disabled]:focus, .btn-success[disabled].focus, fieldset[disabled] .btn-success:hover, fieldset[disabled] .btn-success:focus, fieldset[disabled] .btn-success.focus {
-    background-color: #5cb85c;
-    border-color: #4cae4c; }
+    background-color: #3dc528;
+    border-color: #36b024; }
 .btn-success .badge {
-    color: #5cb85c;
+    color: #3dc528;
     background-color: #fff; }
 .btn-info {
   color: #fff;
@@ -2423,9 +2423,9 @@ a.label:hover, a.label:focus {
 .label-primary[href]:hover, .label-primary[href]:focus {
     background-color: #2a8837; }
 .label-success {
-  background-color: #5cb85c; }
+  background-color: #3dc528; }
 .label-success[href]:hover, .label-success[href]:focus {
-    background-color: #449d44; }
+    background-color: #309b1f; }
 .label-info {
   background-color: #5bc0de; }
 .label-info[href]:hover, .label-info[href]:focus {
@@ -2607,7 +2607,7 @@ a.thumbnail:hover, a.thumbnail:focus, a.thumbnail.active {
   -webkit-animation: progress-bar-stripes 2s linear infinite;
   animation: progress-bar-stripes 2s linear infinite; }
 .progress-bar-success {
-  background-color: #5cb85c; }
+  background-color: #3dc528; }
 .progress-striped .progress-bar-success {
     background-image: -o-linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent);
     background-image: linear-gradient(45deg, rgba(255, 255, 255, .15) 25%, transparent 25%, transparent 50%, rgba(255, 255, 255, .15) 50%, rgba(255, 255, 255, .15) 75%, transparent 75%, transparent); }
@@ -4347,6 +4347,58 @@ h1, h2, h3, h4, h5, h6, .h1, .h2, .h3, .h4, .h5, .h6 {
 .gray-color {
   color: #7f8fa4; }
 
+.btn-success {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#3ec428+0,33bc1d+41,25b10f+100 */
+  background: #3ec428;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#3ec428), color-stop(41%, #33bc1d), to(#25b10f));
+  background: -o-linear-gradient(top, #3ec428 0%, #33bc1d 41%, #25b10f 100%);
+  background: linear-gradient(to bottom, #3ec428 0%, #33bc1d 41%, #25b10f 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#3ec428', endColorstr='#25b10f',GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #249533; }
+
+.btn-danger {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#f85c62+0,ef5056+42,e64349+100 */
+  background: #f85c62;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, from(#f85c62), color-stop(42%, #ef5056), to(#e64349));
+  background: -o-linear-gradient(top, #f85c62 0%, #ef5056 42%, #e64349 100%);
+  background: linear-gradient(to bottom, #f85c62 0%, #ef5056 42%, #e64349 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f85c62', endColorstr='#e64349',GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #b7464a; }
+
+.btn-info {
+  /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#00aeef+1,00abea+42,00a3e0+100 */
+  background: #00aeef;
+  /* Old browsers */
+  /* FF3.6-15 */
+  /* Chrome10-25,Safari5.1-6 */
+  background: -webkit-gradient(linear, left top, left bottom, color-stop(1%, #00aeef), color-stop(42%, #00abea), to(#00a3e0));
+  background: -o-linear-gradient(top, #00aeef 1%, #00abea 42%, #00a3e0 100%);
+  background: linear-gradient(to bottom, #00aeef 1%, #00abea 42%, #00a3e0 100%);
+  /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+  filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#00aeef', endColorstr='#00a3e0',GradientType=0 );
+  /* IE6-9 */
+  border: 1px solid #0083b4; }
+
+.btn-default {
+  border: 1px solid #959595; }
+
+.form-control {
+  font-size: 13px;
+  background: #FFF;
+  color: #7f8fa4;
+  height: 30px;
+  padding: 3px 8px; }
+
 /*!
  *   AdminLTE v2.4.0
  *   Author: Almsaeed Studio
@@ -4873,10 +4925,10 @@ a:hover, a:active, a:focus {
   margin: 0 auto;
   padding: 0 15px; }
 
-.form-control {
+.selectbox-wrapper {
   font-size: 13px;
   border: 1px solid #ced0da;
-  background: #f5f6f9;
+  background: #f5f6f9 !important;
   color: #7f8fa4;
   height: 30px;
   padding: 3px 8px; }
@@ -5294,6 +5346,30 @@ a:hover, a:active, a:focus {
 .resume-box .collapse {
   clear: both;
   overflow: hidden; }
+
+.resume-box-footer .btn {
+  min-width: 130px;
+  margin-left: 10px; }
+
+.resume-box .form-group {
+  margin-bottom: 30px; }
+
+.resume-box .form-group:last-child {
+  margin-bottom: 0; }
+
+.resume-box .form-control {
+  padding: 18px 8px; }
+
+.resume-box .form-group label {
+  padding: 10px 0 4px 0;
+  font-weight: normal; }
+
+.help-block {
+  padding: 1px 0 4px 0; }
+
+.resume-box select {
+  height: 38px;
+  padding: 0 !important; }
 
 /*
  * Skin: Blue

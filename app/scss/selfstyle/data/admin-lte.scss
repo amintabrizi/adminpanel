@@ -924,10 +924,10 @@ a:focus {
   margin: 0 auto;
   padding: 0 15px;
 }
-.form-control{
+.selectbox-wrapper{
   font-size: 13px;
   border: 1px solid #ced0da;
-  background: #f5f6f9;
+  background: #f5f6f9!important;
   color: #7f8fa4;
   height: 30px;
   padding: 3px 8px;
@@ -1322,4 +1322,28 @@ padding: 0;
 .resume-box .collapse{
   clear: both;
   overflow: hidden;
+}
+.resume-box-footer .btn{
+  min-width: 130px;
+  margin-left: 10px;
+}
+.resume-box .form-group{
+  margin-bottom: 30px;
+}
+.resume-box .form-group:last-child{
+  margin-bottom: 0;
+}
+.resume-box .form-control{
+  padding: 18px 8px;
+}
+.resume-box .form-group label{
+  padding: 10px 0 4px 0;
+  font-weight: normal;
+}
+.help-block{
+  padding: 1px 0 4px 0;
+}
+.resume-box select{
+  height: 38px;
+  padding: 0!important;
 }
