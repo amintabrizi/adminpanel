@@ -17,9 +17,17 @@
 .skin-blue .main-header .navbar .nav .open > a:focus,
 .skin-blue .main-header .navbar .nav > .active > a {
   background: #FFF;
-  color: red;
+  color: #00aeef;
 }
-
+.skin-blue .main-header .navbar .nav > li > a:hover svg,
+.skin-blue .main-header .navbar .nav > li > a:active svg,
+.skin-blue .main-header .navbar .nav > li > a:focus svg,
+.skin-blue .main-header .navbar .nav .open > a svg,
+.skin-blue .main-header .navbar .nav .open > a:hover svg,
+.skin-blue .main-header .navbar .nav .open > a:focus svg,
+.skin-blue .main-header .navbar .nav > .active > a svg{
+  fill: #00aeef;
+}
 .skin-blue .main-header .navbar .sidebar-toggle:hover {
   color: #f6f6f6;
   background: rgba(0, 0, 0, 0.1);

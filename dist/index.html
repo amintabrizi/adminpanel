@@ -5,8 +5,6 @@
     <meta content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no" name="viewport">
     <meta http-equiv="x-ua-compatible" content="ie=edge">
     <title>قالب شاتل</title>
-    <!-- Font Awesome -->
-  	<link rel="stylesheet" href="css/css/font-awesome.min.css">
     <link rel="stylesheet" href="css/styles.min.css">
 </head>
 
@@ -18,10 +16,10 @@
     <!-- Logo -->
     <h1 class="logo-wrapper">
     <a href="#" class="logo">
-      <span class="logo-mini hidden-sm hidden-md hidden-lg"><svg width="40" height="40" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#shatel"></use></svg></span>
+      <span class="logo-mini hidden-sm hidden-md hidden-lg"><svg width="70" height="70" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#shatel"></use></svg></span>
 		
 	<span class="logo-lg hidden-xs"><svg width="75" height="75" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#shatel"></use></svg></span>
-        <p>سیستم جذب و استخدام</p></span>
+        <p class="hidden-xs">سیستم جذب و استخدام</p></span>
     </a>
     </h1>
     <!-- Header Navbar: style can be found in header.less -->
@@ -160,8 +158,8 @@
           	<svg width="20" height="20" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#doc-tick"></use></svg>
             </div>
             <span class="menu-title">تایید مدیرعامل</span>
-            <span class="pull-right-container lable-container">
-              <span class="label label-primary pull-left">۴</span>
+            <span class="lable-container">
+              <span class="label label-orange pull-left">۴</span>
             </span>
           </a>
         </li>
@@ -310,12 +308,12 @@
                 <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>نام پدر</span></th>
                 <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>شماره شناسنامه</span></th>
                 <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>کد ملی</span></th>
-                <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>شهر</span></th>
+                <th class="margin-r-15"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>شهر</span></th>
                 <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>سمت درخواستی</span></th>
-                <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>وضعیت</span></th>
+                <th class="margin-r-15"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>وضعیت</span></th>
                 <th>
                     <div class="form-group">
-                      <select class="form-control">
+                      <select class="form-control selectbox-wrapper">
                         <option>عملیات</option>
                         <option>پاک کردن</option>
                         <option>ویرایش کردن</option>  
@@ -326,7 +324,7 @@
         </thead>
         <tbody>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -336,20 +334,52 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">تهران</td>
+                <td data-title="شهر" class="margin-r-15">تهران</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+                <td class="actions">
+                    <span data-toggle="modal" data-target="#modal1">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    </span>
+                    <span data-toggle="modal" data-target="#modal2">
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
+                    </span>
+                    <span data-toggle="modal" data-target="#modal3">
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    </span>
+                    <span data-toggle="modal" data-target="#modal4">
                     <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="انتقال به واحد" class="btn btn-transfer"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#transfer"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="نمایش" class="btn btn-view"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#view"></use></svg></div></a>
+                    </span>
+                    <span class="toast">
+                    <a  class="btn btn-transfer eval-js"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#transfer"></use></svg></div></a>
+                    <pre class="hidden"><code>$.toast({
+                    text: '5 رزومه توسط شما تایید شد',
+                    bgColor: '#28d55f',
+                    textColor: 'white',
+                     loader: false, 
+                     hideAfter: false, 
+                    showHideTransition: 'plain',
+                    textAlign: 'right', 
+                     icon: 'success',
+                    })</code></pre>
+                    </span>
+                    <span class="toast">
+                    <a data-toggle="tooltip" title="نمایش" class="btn btn-view eval-js"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#view"></use></svg></div></a>
+                    <pre class="hidden"><code>$.toast({
+                    text: '10 رزومه جدید دریافت شد',
+                    bgColor: '#349fef',
+                    textColor: 'white',
+                     loader: false, 
+                     hideAfter: false, 
+                    showHideTransition: 'plain',
+                    textAlign: 'right', 
+                     icon: 'info',
+                    })</code></pre>
+                    </span>
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -359,20 +389,32 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">اصفهان</td>
+                <td data-title="شهر" class="margin-r-15">اصفهان</td>
                 <td data-title="سمت درخواستی">کارشناس کارگزینی</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></use></svg></div></use></svg>نامشخص</td>
-                <td data-title="عملیات" class="actions">
-                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
-                    <a data-toggle="tooltip" title="انتقال به واحد" class="btn btn-transfer"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#transfer"></use></svg></div></a>
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></use></svg></div></use></svg>نامشخص</td>
+                <td class="actions">
+                	<span class="toast">
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history eval-js"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <pre class="hidden"><code>$.toast({
+                    text: '5 رزومه توسط شما تایید شد',
+                    bgColor: '#fda719',
+                    textColor: 'white',
+                     loader: false, 
+                     hideAfter: false, 
+                    showHideTransition: 'plain',
+                    textAlign: 'right', 
+                     icon: 'warning',
+                    })</code></pre>
+                    </span>
+                    <span data-toggle="modal" data-target="#modal5">
+                    <a data-toggle="tooltip" title="رد" class="btn btn-reject"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#reject-small"></use></svg></div></a>
+                    </span>
+                    <a data-toggle="tooltip" title="قبول" class="btn btn-accept"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#accept-small"></use></svg></div></a>
                     <a data-toggle="tooltip" title="نمایش" class="btn btn-view"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#view"></use></svg></div></a>
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -382,10 +424,10 @@
                 <td data-title="نام پدر">محمد مهدی زاده</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">شیراز</td>
+                <td data-title="شهر" class="margin-r-15">شیراز</td>
                 <td data-title="سمت درخواستی">کارشناس سستادی فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -395,7 +437,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -405,10 +447,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">قزوین</td>
+                <td data-title="شهر" class="margin-r-15">قزوین</td>
                 <td data-title="سمت درخواستی">کارشناس حسابداری مالی</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -418,7 +460,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -428,10 +470,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">اهواز</td>
+                <td data-title="شهر" class="margin-r-15">اهواز</td>
                 <td data-title="سمت درخواستی">مسئول دفتر فنی</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -441,7 +483,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -451,10 +493,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">عباس آباد</td>
+                <td data-title="شهر" class="margin-r-15">عباس آباد</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -464,7 +506,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -474,10 +516,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">بندر امام خمینی</td>
+                <td data-title="شهر" class="margin-r-15">بندر امام خمینی</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></use></svg></div>نامشخص</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-gray"></use></svg></div>نامشخص</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -487,7 +529,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -497,10 +539,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">زاهدان</td>
+                <td data-title="شهر" class="margin-r-15">زاهدان</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -510,7 +552,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -520,10 +562,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">کرمانشاه</td>
+                <td data-title="شهر" class="margin-r-15">کرمانشاه</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -533,7 +575,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -543,10 +585,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">تهران</td>
+                <td data-title="شهر" class="margin-r-15">تهران</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-red"></use></svg></div>رد شده توسط واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -556,7 +598,7 @@
                 </td>
             </tr>
             <tr>
-                <td data-title="انتخاب">
+                <td class="select-wrapper">
                 <label class="container">
                   <input type="checkbox">
                   <span class="checkmark"></span>
@@ -566,10 +608,10 @@
                 <td data-title="نام پدر">محمد</td>
                 <td data-title="شماره شناسنامه">29070</td>
                 <td data-title="کد ملی">0063526255</td>
-                <td data-title="شهر" class="city">تهران</td>
+                <td data-title="شهر" class="margin-r-15">تهران</td>
                 <td data-title="سمت درخواستی">کارشناس پشتیبان فروش</td>
-                <td data-title="وضعیت" class="user-status"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
-                <td data-title="عملیات" class="actions">
+                <td data-title="وضعیت" class="margin-r-15 relative"><div class="circle-svg-wrapper"><svg width="6" height="6" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#circle-yellow"></use></svg></div>بازگشت از واحد متقاضی</td>
+                <td class="actions">
                     <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
                     <a data-toggle="tooltip" title="بایگانی" class="btn btn-archives"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#archive"></use></svg></div></a>
                     <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
@@ -593,7 +635,7 @@
                   </ul>
                 </div>
                 <div class="pull-right select-count">
-                <select class="form-control">
+                <select class="form-control selectbox-wrapper">
                     <option>۱۰ مورد در هر صفحه</option>
                     <option>۲۰ مورد در هر صفحه</option>
                     <option>۵۰ مورد در هر صفحه</option>  
@@ -606,9 +648,679 @@
     </div>
   </div>
   <!-- /.content-wrapper -->
-
 </div>
-    
+<div class="modal fade small-modal" id="modal1">
+  <div class="modal-dialog">
+  	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">هماهنگی جلسه مصاحبه</h4>
+      </div>
+    <div class="modal-content">
+      <div class="modal-body">
+      	<div class="input-wrapper">
+            <label>نتیجه مصاحبه</label>
+            <select class="form-control selectbox-wrapper">
+            <option>مثبت</option>
+            <option>منفی</option>
+            </select>
+        </div>
+        <div class="input-wrapper">
+            <label>مصاحبه کننده</label>
+            <input type="text" class="form-control" id="user">
+        </div>
+        <div class="input-wrapper no-margin">
+        	<label>شرح</label>
+            <textarea class="form-control" rows="5" id="comment"></textarea>
+        </div>
+      </div>    
+    </div>
+    <div class="modal-footer">
+    	<a href="#" class="btn btn-success">ثبت</a>
+        <a href="#" data-dismiss="modal" class="btn btn-default">انصراف</a>
+    </div>
+  </div>
+</div>
+
+<div class="modal fade extra-large-modal" id="modal2">
+  <div class="modal-dialog">
+  	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">مصاحبه حضوری</h4>
+      </div>
+    <div class="modal-content">
+      <div class="modal-body scroll-wrapper">
+      	<div class="box-header">
+ 		<a href="#" class="btn btn-primary btn-icon"><span class="btn-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#mobile"></use></svg></span>هماهنگی جلسه مصاحبه</a>
+        </div>
+        <div class="table-wrapper scroll">
+        <table class="table-striped table-condensed cf col-xs-12">
+        <thead class="cf">
+            <tr>
+                <th> 
+                <label class="container">
+                  <input type="checkbox" id="checkAll">
+                  <span class="checkmark"></span>
+                </label>
+                </th>
+                <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>تاریخ</span></th>
+                <th><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>محل</span></th>
+                <th class="margin-r-15"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>نتیجه مصاحبه</span></th>
+                <th class="margin-r-15"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>شرح</span></th>
+                <th>
+                    <div class="form-group">
+                      <select class="form-control selectbox-wrapper">
+                        <option>عملیات</option>
+                        <option>پاک کردن</option>
+                        <option>ویرایش کردن</option>  
+                      </select>
+                    </div>
+                </th>
+            </tr> 
+        </thead>
+        <tbody>
+            <tr>
+                <td class="select-wrapper">
+                <label class="container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </td>
+                <td data-title="تاریخ" class="ltr">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td data-title="محل">واحد امور مشترکین</td>
+                <td data-title="نتیجه مصاحبه" class="margin-r-15"><svg width="8" height="8" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#green-plus"></use></svg><span class="margin-r-5">مثبت</span></td>
+                <td data-title="شرح" class="margin-r-15">اعتماد به نفس بالا - فن بیان داشتند - صبور بودند - شخصیت قوی داشتند</td>
+                <td class="actions">
+                	<span data-toggle="modal" data-target="#modal1">
+                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    </span>
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="select-wrapper">
+                <label class="container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </td>
+                <td data-title="تاریخ" class="ltr">۹۶/۰۶/۱۰ - ۰۸:۳۰</td>
+                <td data-title="محل">دفتر ساختمان اصلی</td>
+                <td data-title="نتیجه مصاحبه" class="margin-r-15"><svg width="8" height="8" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#red-minus"></use></svg><span class="margin-r-5">منفی</span></td>
+                <td data-title="شرح" class="margin-r-15">دانش تخصصی ضعیف - تجربه کم در حوزه اینترنت - عدم تسلط به نرم افزارهای مرتبط</td>
+                <td class="actions">
+                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="select-wrapper">
+                <label class="container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </td>
+                <td data-title="تاریخ" class="ltr">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td data-title="محل">واحد امور مشترکین</td>
+                <td data-title="نتیجه مصاحبه" class="margin-r-15"><svg width="8" height="8" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#green-plus"></use></svg><span class="margin-r-5">مثبت</span></td>
+                <td data-title="شرح" class="margin-r-15">اعتماد به نفس بالا - فن بیان داشتند - صبور بودند - شخصیت قوی داشتند</td>
+                <td class="actions">
+                	<span data-toggle="modal" data-target="#modal1">
+                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    </span>
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="select-wrapper">
+                <label class="container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </td>
+                <td data-title="تاریخ" class="ltr">۹۶/۰۶/۱۰ - ۰۸:۳۰</td>
+                <td data-title="محل">دفتر ساختمان اصلی</td>
+                <td data-title="نتیجه مصاحبه" class="margin-r-15"><svg width="8" height="8" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#red-minus"></use></svg><span class="margin-r-5">منفی</span></td>
+                <td data-title="شرح" class="margin-r-15">دانش تخصصی ضعیف - تجربه کم در حوزه اینترنت - عدم تسلط به نرم افزارهای مرتبط</td>
+                <td class="actions">
+                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="select-wrapper">
+                <label class="container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </td>
+                <td data-title="تاریخ" class="ltr">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td data-title="محل">واحد امور مشترکین</td>
+                <td data-title="نتیجه مصاحبه" class="margin-r-15"><svg width="8" height="8" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#green-plus"></use></svg><span class="margin-r-5">مثبت</span></td>
+                <td data-title="شرح" class="margin-r-15">اعتماد به نفس بالا - فن بیان داشتند - صبور بودند - شخصیت قوی داشتند</td>
+                <td class="actions">
+                	<span data-toggle="modal" data-target="#modal1">
+                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    </span>
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
+                </td>
+            </tr>
+            <tr>
+                <td class="select-wrapper">
+                <label class="container">
+                  <input type="checkbox">
+                  <span class="checkmark"></span>
+                </label>
+                </td>
+                <td data-title="تاریخ" class="ltr">۹۶/۰۶/۱۰ - ۰۸:۳۰</td>
+                <td data-title="محل">دفتر ساختمان اصلی</td>
+                <td data-title="نتیجه مصاحبه" class="margin-r-15"><svg width="8" height="8" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#red-minus"></use></svg><span class="margin-r-5">منفی</span></td>
+                <td data-title="شرح" class="margin-r-15">دانش تخصصی ضعیف - تجربه کم در حوزه اینترنت - عدم تسلط به نرم افزارهای مرتبط</td>
+                <td class="actions">
+                    <a data-toggle="tooltip" title="حذف" class="btn btn-delete"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#delete"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="مشاهده سوابق" class="btn btn-history"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#history"></use></svg></div></a>
+                    <a data-toggle="tooltip" title="ویرایش رزومه" class="btn btn-edit"><div class="actions-svg-wrapper center-items"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#edit"></use></svg></div></a>
+                </td>
+            </tr>
+        </tbody>
+        </table>
+        <div class="box-footer">
+            	<div class="pagination-wrapper pull-left">
+                  <ul class="pagination pagination-sm">
+                    <li><a href="#"><svg width="9" height="9" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#left-arrow"></use></svg></a></li>
+                    <li class="active"><a href="#">۱</a></li>
+                    <li><a href="#">۲</a></li>
+                    <li><a href="#">۳</a></li>
+                    <li><a href="#">۴</a></li>
+                    <li><a href="#">۵</a></li>
+                    <li class="disabled"><a href="#"><svg width="9" height="9" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#right-arrow"></use></svg></a></li>
+                  </ul>
+                </div>
+                <div class="pull-right select-count">
+                <select class="form-control selectbox-wrapper">
+                    <option>۱۰ مورد در هر صفحه</option>
+                    <option>۲۰ مورد در هر صفحه</option>
+                    <option>۵۰ مورد در هر صفحه</option>  
+                </select>
+                <span>۳۰-۴۰ از ۱۰۰ مورد</span>
+                </div>
+            </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+<div class="modal fade med-modal history-view" id="modal3">
+  <div class="modal-dialog">
+  	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">مشاهده سوابق</h4>
+      </div>
+    <div class="modal-content">
+      <div class="modal-body scroll-wrapper">
+        <div class="table-wrapper scroll">
+        <table class="table-striped table-condensed cf col-xs-12">
+        <thead class="cf">
+            <tr>
+                <th class="col-xs-4"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>تاریخ</span></th>
+                <th class="col-xs-4"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>عملیات</span></th>
+                <th class="col-xs-4"><svg width="12" height="12" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#filter"></use></svg><span>توسط</span></th>
+            </tr>
+        </thead>
+        <tbody>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر هماهنگی تلفنی</td>
+                <td data-title="توسط" class="col-xs-4">nasim amiri arshad</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر مصاحبه حضوری</td>
+                <td data-title="توسط" class="col-xs-4">mahsa sedaghat shirazi</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر هماهنگی تلفنی</td>
+                <td data-title="توسط" class="col-xs-4">nasim amiri arshad</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر مصاحبه حضوری</td>
+                <td data-title="توسط" class="col-xs-4">mahsa sedaghat shirazi</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر هماهنگی تلفنی</td>
+                <td data-title="توسط" class="col-xs-4">nasim amiri arshad</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر مصاحبه حضوری</td>
+                <td data-title="توسط" class="col-xs-4">mahsa sedaghat shirazi</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر هماهنگی تلفنی</td>
+                <td data-title="توسط" class="col-xs-4">nasim amiri arshad</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر مصاحبه حضوری</td>
+                <td data-title="توسط" class="col-xs-4">mahsa sedaghat shirazi</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر هماهنگی تلفنی</td>
+                <td data-title="توسط" class="col-xs-4">nasim amiri arshad</td> 
+            </tr>
+            <tr>
+                <td data-title="تاریخ" class="ltr col-xs-4">۹۶/۰۸/۰۱۱ - ۰۹:۳۰</td>
+                <td  class="col-xs-4">منتظر مصاحبه حضوری</td>
+                <td data-title="توسط" class="col-xs-4">mahsa sedaghat shirazi</td> 
+            </tr>
+        </tbody>
+        </table>
+        <div class="box-footer">
+            	<div class="pagination-wrapper pull-left">
+                  <ul class="pagination pagination-sm">
+                    <li><a href="#"><svg width="9" height="9" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#left-arrow"></use></svg></a></li>
+                    <li class="active"><a href="#">۱</a></li>
+                    <li><a href="#">۲</a></li>
+                    <li class="disabled"><a href="#"><svg width="9" height="9" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#right-arrow"></use></svg></a></li>
+                  </ul>
+                </div>
+                <div class="pull-right select-count">
+                <select class="form-control selectbox-wrapper">
+                    <option>۱۰ مورد در هر صفحه</option>
+                    <option>۲۰ مورد در هر صفحه</option>
+                    <option>۵۰ مورد در هر صفحه</option>  
+                </select>
+                <span>۳۰-۴۰ از ۱۰۰ مورد</span>
+                </div>
+            </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+<div class="modal fade small-modal history-view" id="modal4">
+  <div class="modal-dialog">
+  	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">مشاهده نتیجه آزمون</h4>
+      </div>
+    <div class="modal-content">
+      <div class="modal-body scroll-wrapper">
+        <div class="scroll">
+        	<div class="smallbox">
+            	<div class="smallbox-header">
+                	نتایج آزمون اکسل و ورد
+                </div>
+                <div class="smallbox-content">
+                	<div class="row-content">
+                	<div class="col-xs-4 no-padding text-right"><span class="smallbox-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#accept"></use></svg></span><span class="margin-r-20">نتیجه: word</span></div>
+                    <div class="col-xs-4 no-padding text-center">هدف: ۷۰</div>
+                    <div class="col-xs-4 no-padding text-center">نتیجه: <span class="text-success">80</span></div>
+                    </div>
+                    <div class="row-content">
+                	<div class="col-xs-4 no-padding text-right"><span class="smallbox-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#accept"></use></svg></span><span class="margin-r-20">نتیجه: اکسل</span></div>
+                    <div class="col-xs-4 no-padding text-center">هدف: ۷۰</div>
+                    <div class="col-xs-4 no-padding text-center">نتیجه: <span class="text-success">80</span></div>
+                    </div>
+                </div>
+            </div>
+        	<div class="smallbox">
+            	<div class="smallbox-header">
+                	نتایج آزمون تایپ فارسی
+                </div>
+                <div class="smallbox-content">
+                	<div class="row-content">
+                	<div class="col-xs-4 no-padding text-right"><span class="smallbox-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#reject"></use></svg></span><span class="margin-r-20">دقت تایپ فارسی</span></div>
+                    <div class="col-xs-4 no-padding text-center">هدف: ۷۰</div>
+                    <div class="col-xs-4 no-padding text-center">نتیجه: <span class="text-danger">60</span></div>
+                    </div>
+                    <div class="row-content">
+                	<div class="col-xs-4 no-padding text-right"><span class="smallbox-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#exclamation"></use></svg></span><span class="margin-r-20">مهارت تایپ فارسی</span></div>
+                    <div class="col-xs-4 no-padding text-center">هدف: ۷۰</div>
+                    <div class="col-xs-4 no-padding text-center">نتیجه: <span class="text-warning">69</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>    
+    </div>
+  </div>
+</div>
+
+<div class="modal fade large-modal history-view" id="modal5">
+  <div class="modal-dialog">
+  	<div class="modal-header">
+        <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+        <h4 class="modal-title">جزئیات رزومه</h4>
+      </div>
+    <div class="modal-content">
+      <div class="modal-body scroll-wrapper">
+        <div class="nav-tabs-custom scroll">
+            <ul class="nav nav-tabs pull-right responsive no-padding">
+              <li class="active"><a href="#tab1" data-toggle="tab" aria-expanded="true"><span>رزومه در یک نگاه</a></span></li>
+              <li class=""><a href="#tab2" data-toggle="tab" aria-expanded="رس"><span>مشخصات فردی</span></a></li>
+              <li class=""><a href="#tab3" data-toggle="tab" aria-expanded="false"><span>معرفین</span></a></li>
+              <li class=""><a href="#tab4" data-toggle="tab" aria-expanded="false"><span>سوابق تحصیلی</span></a></li>
+              <li class=""><a href="#tab5" data-toggle="tab" aria-expanded="false"><span>سوابق کاری</span></a></li>
+              <li class=""><a href="#tab6" data-toggle="tab" aria-expanded="false"><span>سوابق آموزشی</span></a></li>
+              <li class=""><a href="#tab7" data-toggle="tab" aria-expanded="false"><span>سوالات</span></a></li>
+              <li class=""><a href="#tab8" data-toggle="tab" aria-expanded="false"><span>مصاحبه ها</span></a></li>
+            </ul>
+            <div class="tab-content responsive">
+              <div class="tab-pane mini-resume-box active" id="tab1">
+              	<div class="resume-box">
+                <h5 class="pull-right">مشخصات عمومی</h5>
+                <div class="user-body">
+                    <div class="col-xs-12 col-sm-2 user-pic no-padding">
+                        <img class="img-responsive" src="img/amirabbas.jpg" alt="user">
+                    </div>
+                    <div class="col-xs-12 col-sm-10 no-padding user-info">
+                    	<div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">نام کامل:</div>
+                            <div class="col-sm-8">امین تبریزی</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">تاریخ تولد:</div>
+                            <div class="col-sm-8">۱۳۶۲/۱۲/۱۲</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">وضعیت تاهل:</div>
+                            <div class="col-sm-8">متاهل</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">تعداد فرزندان:</div>
+                            <div class="col-sm-8">۲</div>
+                        </div>
+                        
+                      <div id="info-collapse" class="collapse">
+                            <div class="col-xs-12 col-sm-6 info-row">
+                                <div class="col-sm-4 gray-color">نام کامل:</div>
+                                <div class="col-sm-8">امین تبریزی</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 info-row">
+                                <div class="col-sm-4 gray-color">تاریخ تولد:</div>
+                                <div class="col-sm-8">۱۳۶۲/۱۲/۱۲</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 info-row">
+                                <div class="col-sm-4 gray-color">وضعیت تاهل:</div>
+                                <div class="col-sm-8">متاهل</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 info-row">
+                                <div class="col-sm-4 gray-color">تعداد فرزندان:</div>
+                                <div class="col-sm-8">۲</div>
+                            </div>                        
+                      </div>
+
+                    </div>
+<button type="button" class="view-more btn" data-toggle="collapse" data-target="#info-collapse"><svg width="10" height="10" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#arrow-down"></use></svg></button>                    
+                </div>
+                
+                </div>
+                <div class="resume-box">
+                <h5 class="pull-right">سوابق تحصیلی</h5>
+                <div class="user-body">
+                    <div class="col-xs-12 col-sm-12 no-padding user-educational-history">
+                    	<div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-4 gray-color padding-r-0">نام شرکت:</div>
+                            <div class="col-sm-8">بازرگانی بوتیا</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">سمت:</div>
+                            <div class="col-sm-8">کارشناس فروش</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-4 gray-color padding-r-0">تاریخ شروع کار:</div>
+                            <div class="col-sm-8">۱۳۹۵/۱/۱</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">تاریخ پایان کار:</div>
+                            <div class="col-sm-8">۱۳۹۶/۱/۱</div>
+                        </div>
+                        <div class="collapse" id="educational-collapse">
+                            <div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                                <div class="col-sm-4 gray-color padding-r-0">نام شرکت:</div>
+                                <div class="col-sm-8">بازرگانی بوتیا</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 info-row">
+                                <div class="col-sm-4 gray-color">سمت:</div>
+                                <div class="col-sm-8">کارشناس فروش</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                                <div class="col-sm-4 gray-color padding-r-0">تاریخ شروع کار:</div>
+                                <div class="col-sm-8">۱۳۹۵/۱/۱</div>
+                            </div>
+                            <div class="col-xs-12 col-sm-6 info-row">
+                                <div class="col-sm-4 gray-color">تاریخ پایان کار:</div>
+                                <div class="col-sm-8">۱۳۹۶/۱/۱</div>
+                            </div>
+                        </div>
+                    </div>
+                    <a href="#" data-toggle="collapse" data-target="#educational-collapse" class="view-more"><svg width="10" height="10" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#arrow-down"></use></svg></a>
+                </div>
+                </div>
+                <div class="resume-box">
+                <h5 class="pull-right">دوره های آموزشی</h5>
+                <div class="user-body">
+                    <div class="col-xs-12 col-sm-12 no-padding">
+                    	<div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-4 gray-color padding-r-0">نام دوره آموزشی</div>
+                            <div class="col-sm-8">دوره کاربردی رقابت پذیری</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">عنوان موسسه:</div>
+                            <div class="col-sm-8">مجتمع فنی تهران</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-4 gray-color padding-r-0">مدت دوره:</div>
+                            <div class="col-sm-8">3 ماه</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-4 gray-color">گواهینامه</div>
+                            <div class="col-sm-8">دارد</div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-more"><svg width="10" height="10" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#arrow-down"></use></svg></a>
+                </div>
+                </div>
+                <div class="resume-box">
+                <h5 class="pull-right">زبان های خارجی</h5>
+                <div class="user-body">
+                    <div class="col-xs-12 col-sm-12 no-padding">
+                    	<div class="col-xs-12 col-sm-12 info-row padding-r-0">
+                        	<div class="col-sm-3 padding-r-0"><div class="col-sm-3 gray-color padding-r-0 padding-l-0">زبان:</div><div class="col-sm-9 padding-r-0">انگلیسی</div></div>
+                            <div class="col-sm-3 padding-r-0"><div class="col-sm-6 gray-color padding-l-0">درک مطلب:</div><div class="col-sm-6 padding-r-0">خوب</div></div>
+                            <div class="col-sm-3 padding-r-0"><div class="col-sm-6 gray-color padding-l-0">صحبت کردن:</div><div class="col-sm-6 padding-r-0">ضعیف</div></div>
+                            <div class="col-sm-3 padding-r-0"><div class="col-sm-4 gray-color padding-l-0">نوشتن:</div><div class="col-sm-8 padding-r-0">متوسط</div></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-12 info-row padding-r-0">
+                        	<div class="col-sm-3 padding-r-0"><div class="col-sm-3 gray-color padding-r-0 padding-l-0">زبان:</div><div class="col-sm-9 padding-r-0">انگلیسی</div></div>
+                            <div class="col-sm-3 padding-r-0"><div class="col-sm-6 gray-color padding-l-0">درک مطلب:</div><div class="col-sm-6 padding-r-0">خوب</div></div>
+                            <div class="col-sm-3 padding-r-0"><div class="col-sm-6 gray-color padding-l-0">صحبت کردن:</div><div class="col-sm-6 padding-r-0">ضعیف</div></div>
+                            <div class="col-sm-3 padding-r-0"><div class="col-sm-4 gray-color padding-l-0">نوشتن:</div><div class="col-sm-8 padding-r-0">متوسط</div></div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-more"><svg width="10" height="10" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#arrow-down"></use></svg></a>
+                </div>
+                </div>
+                <div class="resume-box">
+                <h5 class="pull-right">مهارت نرم افزاری</h5>
+                <div class="user-body">
+                    <div class="col-xs-12 col-sm-12 no-padding">
+                    	<div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-3 gray-color padding-r-0 padding-l-0">نام نرم افزار:</div>
+                            <div class="col-sm-9 padding-r-0">Microsoft Word</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-3 gray-color padding-l-0">میزان آشنایی</div>
+                            <div class="col-sm-9 padding-r-0">متوسط</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-3 gray-color padding-r-0 padding-l-0">نام نرم افزار:</div>
+                            <div class="col-sm-9 padding-r-0">Microsoft excel</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-3 gray-color padding-l-0">میزان آشنایی</div>
+                            <div class="col-sm-9 padding-r-0">خوب</div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-more"><svg width="10" height="10" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#arrow-down"></use></svg></a>
+                </div>
+                </div>
+                <div class="resume-box">
+                <h5 class="pull-right">وضعیت متقاضی</h5>
+                <div class="user-body">
+                    <div class="col-xs-12 col-sm-12 no-padding">
+                    	<div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-3 gray-color padding-r-0 padding-l-0">سمت:</div>
+                            <div class="col-sm-9 padding-r-0">کارشناسی پشتیبانی فروش</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-3 gray-color padding-l-0">واحد</div>
+                            <div class="col-sm-9 padding-r-0">پشتیبانی فروش</div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row padding-r-0">
+                        	<div class="col-sm-3 gray-color padding-r-0 padding-l-0">نتیجه مصاحبه:</div>
+                            <div class="col-sm-9 padding-r-0"><a href="#">مشاهده نتیجه</a></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-6 info-row">
+                        	<div class="col-sm-3 gray-color padding-l-0">نتیجه مصاحبه:</div>
+                            <div class="col-sm-9 padding-r-0"><a href="#">مشاهده نتیجه</a></div>
+                        </div>
+                        <div class="col-xs-12 col-sm-9 info-row  padding-r-0">
+                        	<div class="col-sm-2 gray-color padding-r-0 padding-l-0">نظر کمیته جذب:</div>
+                            <div class="col-sm-10 padding-r-0">دانش تخصصی ضعیف - تجربه کم در حوزه اینترنت - عدم تسلط کافی به نرم افزارهای مرتبط</div>
+                        </div>
+                    </div>
+                    <a href="#" class="view-more"><svg width="10" height="10" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#arrow-down"></use></svg></a>
+                </div>
+                </div>
+                <div class="resume-box resume-box-footer">
+                    <button type="button" class="btn btn-success btn-icon"><span class="btn-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#accept-small"></use></svg></span>ثبت</button>
+                    <button type="button" class="btn btn-danger btn-icon"><span class="btn-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#reject-small"></use></svg></span>رد</button>
+                    <button type="button" class="btn btn-info btn-icon"><span class="btn-svg-wrapper"><svg width="18" height="18" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#chat"></use></svg></span>مشروط</button>
+                    <button data-dismiss="modal" type="button" class="btn btn-default pull-left">انصراف</button>
+                </div>
+              </div>
+              <div class="tab-pane" id="tab2">
+              	<form class="form-horizontal" action="#">
+                    <div class="resume-box">
+                        <h5 class="pull-right">مشخصات عمومی</h5>
+                        <div class="user-body">
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">نام کامل</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="امین تبریزی">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">نام</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="امین">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">نام خانوادگی</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="تبریزی">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">شماره شناسنامه</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="12365">
+                              </div>
+                            </div>
+                            <div class="form-group has-error row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">کد ملی</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="0065526255">
+                              </div>
+                              <span class="help-block col-xs-3"><svg width="18" height="18" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#warning-inputbox"></use></svg>کدملی را درست وارد کنید</span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-box">
+                        <h5 class="pull-right">مشخصات شخصی</h5>
+                        <div class="user-body">
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">جنسیت</label>
+                              <div class="col-xs-6">
+                                <select class="form-control selectbox-wrapper">
+                                <option>مرد</option>
+                        		<option>زن</option>  
+                                </select>
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">تاریخ تولد</label>
+                              <div class="col-xs-6">
+                                <input class="form-control text-left ltr" type="text" value="12/12/1366">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">نام خانوادگی</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="تبریزی">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">شماره شناسنامه</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="12365">
+                              </div>
+                            </div>
+                            <div class="form-group row">
+                              <label for="example-text-input" class="col-xs-2 col-form-label">کد ملی</label>
+                              <div class="col-xs-6">
+                                <input class="form-control" type="text" value="0065526255">
+                              </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="resume-box resume-box-footer">
+                    <button type="button" class="btn btn-success btn-icon"><span class="btn-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#accept-small"></use></svg></span>ثبت</button>
+                    <button type="button" class="btn btn-danger btn-icon"><span class="btn-svg-wrapper"><svg width="15" height="15" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#reject-small"></use></svg></span>رد</button>
+                    <button type="button" class="btn btn-info btn-icon"><span class="btn-svg-wrapper"><svg width="18" height="18" role="img"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="svg-sprite/svg.svg#chat"></use></svg></span>مشروط</button>
+                    <button data-dismiss="modal" type="button" class="btn btn-default pull-left">انصراف</button>
+                </div>
+                </form>
+              </div>
+              <div class="tab-pane" id="tab3">
+                3
+              </div>
+              <div class="tab-pane" id="tab4">
+                4
+              </div>
+              <div class="tab-pane" id="tab5">
+                5
+              </div>
+              <div class="tab-pane" id="tab6">
+                6
+              </div>
+              <div class="tab-pane" id="tab7">
+                7
+              </div>
+              <div class="tab-pane" id="tab8">
+                8
+              </div>
+            </div>
+            <!-- /.tab-content -->
+          </div>
+      </div>    
+    </div>
+  </div>
+</div>
     <!-- /Start your project here-->
     <script src="js/main.min.js"></script>
 </body>
